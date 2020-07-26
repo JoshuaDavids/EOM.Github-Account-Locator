@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 
 /* Global Styles */
 :root {
-  --primary-color: #ff0000;
+  --primary-color: #222222;
   --dark-color: #333333;
   --light-color: #ffffff;
   --danger-color: #dc3545;
@@ -14,17 +14,24 @@
   margin: 0;
   padding: 0;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #302e4d;
+}
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background: #f2f2fc;
+  background: #ecf0f1;
   color: #333;
 }
 
 a {
-  color: var(--primary-color);
+  color: #504e70;
   text-decoration: none;
 }
 
@@ -33,7 +40,7 @@ a:hover {
 }
 
 a.border:hover {
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
   border-bottom: 1.5px solid var(--primary-color);
 }
 
@@ -122,7 +129,7 @@ img {
 .card {
   padding: 1rem;
   border: 1px solid #999;
-  box-shadow: 0 0 20px rgba(48, 46, 77, .15);
+  box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
   margin: 0.7rem 0;
   background: #f2f2fc;
   border-radius: 5px;
@@ -283,7 +290,7 @@ img {
 .bg-dark,
 .badge-dark,
 .alert-dark {
-  background: var(--dark-color);
+  background: #f02424;
   color: #fff;
 }
 
@@ -340,13 +347,13 @@ input {
 
 input:focus {
   outline: none;
-  box-shadow: 0 0 20px rgba(48, 46, 77, .15);
+  box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 
-input[type='text'],
-input[type='email'],
-input[type='password'],
-input[type='date'],
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
 select,
 textarea {
   display: block;
@@ -356,7 +363,7 @@ textarea {
   border: 1px solid #ccc;
 }
 
-input[type='submit'],
+input[type="submit"],
 button {
   font: inherit;
 }
@@ -381,6 +388,9 @@ table th {
   width: 100%;
   opacity: 0.9;
   margin-bottom: 1rem;
+  background: #fdf9ff;
+  -webkit-box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+  box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 
 .navbar ul {
@@ -388,13 +398,13 @@ table th {
 }
 
 .navbar a {
-  color: #fff;
+  color: #504e70;
   padding: 0.45rem;
   margin: 0 0.25rem;
 }
 
 .navbar a:hover {
-  color: var(--light-color);
+  color: #f02424;
 }
 
 .navbar .welcome span {
